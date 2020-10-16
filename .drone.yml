@@ -1,0 +1,12 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+- name: sleep
+  image: alpine
+  commands:
+  - echo "test pipe"
+  - echo "sleep 300s"
+  - sleep 300s
